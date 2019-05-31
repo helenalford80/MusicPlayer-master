@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/draw_main"
+        android:icon="@drawable/home"
+        android:title="صفحه اصلی" />
+    <item
+        android:id="@+id/draw_registar"
+        android:icon="@drawable/ic_person_add_white_24dp"
+        android:orderInCategory="101"
+        android:title="ثبت نام" />
+    <item
+
+        android:id="@+id/draw_comment"
+        android:icon="@drawable/ic_comment_white_24dp"
+        android:orderInCategory="100"
+        android:title="ارسال نظرات"
+
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/draw_aboutme"
+        android:icon="@drawable/ic_contact_mail_black_24dp"
+        android:orderInCategory="102"
+        android:title="دریاره ما" />
+    <item
+        android:id="@+id/draw_exit"
+android:icon="@drawable/ic_power_white_24dp"
+        android:orderInCategory="103"
+        android:title="خروج" />
+</menu>

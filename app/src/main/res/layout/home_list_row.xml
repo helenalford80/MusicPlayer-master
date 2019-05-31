@@ -1,0 +1,86 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<LinearLayout android:layout_height="160dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+
+    android:id = "@+id/parenthome"
+android:background="@drawable/card_view_bg"
+    android:layout_marginRight="10dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="169dp"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="10dp"
+        android:elevation="3dp"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="169dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2home"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/namehome"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2home"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+
+            <TextView
+                android:id="@+id/agehome"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@id/namehome"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingBottom="@dimen/songs_count_padding_bottom"
+                android:textSize="@dimen/songs_count" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/overflowhome"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/imageView2home"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="156dp"
+                android:layout_toStartOf="@+id/namehome"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_play_circle_outline_blue_400_24dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

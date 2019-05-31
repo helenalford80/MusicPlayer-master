@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="به نی نی آهنگ خوش آمدید"
+        android:textAlignment="center"
+        android:textColor="#3E4993"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="12dp"/>
+    <TextView
+        android:id="@+id/numberview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تعداد موریک های موجود 19000"
+        android:textAlignment="center"
+        android:textColor="#D5D5D5"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12dp"/>
+    <View
+        android:id="@+id/chert"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#F2F2F2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="جدیدترین ها"
+        android:textColor="#3E4993"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="24dp"/>
+
+    <!--<HorizontalScrollView-->
+        <!--android:id="@+id/categoryItem"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--&gt;-->
+
+
+
+
+    <!--</HorizontalScrollView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+
+        />
+
+    <ScrollView android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="2dp"
+                android:text="پیشنهاد ویژه"
+                android:textColor="#3E4993"
+                android:layout_gravity="right"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"
+                />
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/suggestion_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="عشق من"
+                        android:textColor="#3E4993"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="right"/>
+
+                    <TextView
+                        android:id="@+id/suggestion_description1"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="به یاد من من باش عش من"
+                        android:textColor="#D5D5D5"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/suggestion_pic1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/nath"
+                    android:scaleType="fitXY"/>
+
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#F2F2F2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/suggestion_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="عشق من"
+                        android:textColor="#3E4993"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="right"/>
+
+                    <TextView
+                        android:id="@+id/suggestion_description2"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="به یاد من من باش عش من"
+                        android:textColor="#D5D5D5"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/suggestion_pic2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/nath"
+                    android:scaleType="fitXY"
+                    />
+
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#F2F2F2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star" />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star"
+                        android:visibility="invisible"/>
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/star"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/suggestion_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="عشق من"
+                        android:textColor="#3E4993"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="right"/>
+
+                    <TextView
+                        android:id="@+id/suggestion_description3"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="به یاد من من باش عش من"
+                        android:textColor="#D5D5D5"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/suggestion_pic3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/nath"
+                    android:scaleType="fitXY"/>
+
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#F2F2F2"/>
+        </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#F2F2F2"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نظرات کاربران"
+                android:layout_marginRight="24dp"
+                android:textColor="#3E4993"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:layout_marginTop="24dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                android:id="@+id/usernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAlignment="center"
+                android:textColor="#D5D5D5"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="12dp"/>
+                <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تعداد نظرات کاربران"
+                android:textAlignment="center"
+                android:textColor="#D5D5D5"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="12dp"/></LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="5"-->
+                <!--android:layout_marginRight="24dp"-->
+                <!--android:layout_marginLeft="24dp">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="4"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginRight="10dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="right"-->
+                        <!--android:text="علی رضا"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="15dp"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="right"-->
+                        <!--android:text="خیلی تشکر می کنم ازتون لظفا آهنگ های جداب تری رو قرار بدیدخیلی تشکر می کنم ازتون لظفا آهنگ های جداب تری رو قرار بدید " />-->
+                    <!--<View-->
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="#F2F2F2"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:src="@drawable/nath"-->
+                        <!--android:layout_margin="15dp"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="5"-->
+                <!--android:layout_marginRight="24dp"-->
+                <!--android:layout_marginLeft="24dp">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="4"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginRight="10dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="right"-->
+                        <!--android:text="محمد"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="15dp"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="right"-->
+                        <!--android:text="خیلی تشکر می کنم ازتون لظفا آهنگ های جداب تری رو قرار بدیدخیلی تشکر می کنم ازتون لظفا آهنگ های جداب تری رو قرار بدید " />-->
+                    <!--<View-->
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="#F2F2F2"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:src="@drawable/nath"-->
+                        <!--android:layout_margin="15dp"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <ListView
+                android:id="@+id/listViewhome"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:textDirection="rtl"
+                android:fillViewport="true"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
